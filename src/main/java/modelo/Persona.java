@@ -1,13 +1,8 @@
-package ud.programacionavanzadaweb.modelo;
+package modelo;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
 
-@Entity
+
 public class Persona {
-    @Id
-    @GeneratedValue
     private String id;
     private String nombre;
 

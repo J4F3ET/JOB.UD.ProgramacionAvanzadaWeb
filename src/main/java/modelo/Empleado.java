@@ -1,12 +1,7 @@
-package ud.programacionavanzadaweb.modelo;
+package modelo;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.OneToOne;
 
-@Entity
 public class Empleado extends Persona {
-    @OneToOne
-    private Persona persona;
     private double salarioBasico;
     private int dias;
 
