@@ -3,8 +3,8 @@ package modelo;
 public class Nomina extends Empleado {
     private final double smmlv = 1300000.0;
     private final double auxTransporte = 162000.0;
-    public Nomina() {
-    }
+    private final double valorDiario = 40000.0;
+    public Nomina() {}
     public Nomina(String nombre, double salarioBasico, int dias) {
         super(nombre, salarioBasico, dias);
     }
@@ -18,6 +18,6 @@ public class Nomina extends Empleado {
         return getSalarioBasico()*0.04;
     }
     public double calcularSalario() {
-       return getSalarioBasico()-getSalud()-getAuxilioTransporte()-getPension();
+       return getSalarioBasico()-getSalud()+getAuxilioTransporte()-getPension()+(valorDiario*getDias());
     }
 }

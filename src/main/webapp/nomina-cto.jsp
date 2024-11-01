@@ -1,5 +1,4 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
-<%@ page import="java.util.List" %>
 <%@ page import="modelo.Nomina" %>
 <%@ page import="java.util.HashMap" %>
 <%@ page import="java.util.Map" %>
@@ -41,6 +40,7 @@
                 <div class="form_group">
                     <input id="submit" class="btn calc" type="submit" value="Calcular">
                 </div>
+<%--                <div class="form_group"><input id="clear_form" class="btn clear" type="reset" value="Limpiar"></div>--%>
             </form>
         </div>
     </div>
