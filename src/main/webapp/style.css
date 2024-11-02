@@ -5,6 +5,7 @@ body{
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr;
+    gap: 1rem;
     background-color: #e3e3e3;
     width: 90dvw;
     height: 100dvh;
@@ -45,30 +46,34 @@ body{
     border-radius: 20px;
     box-shadow: 3px 4px 0 1px #E99F4C;
 }
+.result-table{
+    border : 2px solid #264143;
+    border-radius: 5px;
+    margin: 10px;
+}
 .result-table-header{
-    border-bottom: 2px solid #264143;
     font-weight: 600;
-    width: 100%;
     th{
         border-right: 2px solid #264143;
-        padding: 5px;
+        padding: 0.5rem;
     }
     th:first-child{
         border-left: none;
-        width: 100%;
     }
     th:last-child{
         border-right: none;
-        width: 100%;
     }
 }
 .result-table-row{
-    border: 2px solid #264143;
     width: 100%;
     td{
         padding: 5px;
-        text-align: center;
+        border-top: 2px  dashed #264143;
+        border-right: 2px solid #264143;
         text-wrap: nowrap;
+    }
+    td:last-child{
+        border-right: none;
     }
 }
 .form_area {

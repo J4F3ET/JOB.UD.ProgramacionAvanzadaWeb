@@ -47,7 +47,8 @@ public class NominaCTO extends HttpServlet {
                 salario,
                 Integer.parseInt(request.getParameter("dias"))
         );
-        nominaHashMap.put(nomina.getNombre(), nomina);
+        nomina.setId(request.getParameter("identificacion"));
+        nominaHashMap.put(nomina.getId(), nomina);
         response.sendRedirect(getServletContext().getContextPath()+"/nomina-cto");
     }
 

@@ -50,7 +50,7 @@
             <p class="title">  Resultado</p>
             <div id="result-container" class="container"></div>
             <table class="result-table">
-                <thead>
+                <thead class="result-table-header">
                 <tr>
                     <th>Nombre</th>
                     <th>Identificación</th>
@@ -67,12 +67,12 @@
                 if (nominaMap != null) {
             %>
 
-                <tbody class="result-table-row">
+                <tbody>
                 <% for (Map.Entry<String, Nomina> entry : nominaMap.entrySet()) {
                     Nomina nomina = entry.getValue();
                     String nombre = entry.getKey();
                 %>
-                <tr id="<%=  nombre %>">
+                <tr id="<%=  nombre %>" class="result-table-row">
                     <td class="result-table-cell"><%= nomina.getNombre() %></td>
                     <td class="result-table-cell"><%= nomina.getId() %></td>
                     <td class="result-table-cell">$ <%= nomina.getSalarioBasico() %></td>
